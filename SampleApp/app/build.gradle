@@ -55,6 +55,6 @@ dependencies {
     debugImplementation libs.androidx.compose.ui.tooling
     debugImplementation libs.androidx.compose.ui.test.manifest
 
-    implementation 'com.github.AmalgamatedCodersInc:IlluminateAI_Android_SDK:SNAPSHOT'
+    implementation 'com.github.AmalgamatedCodersInc:IlluminateAI_Android_SDK:2025.09.05'
 
 }
