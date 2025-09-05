@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.findmyshade_example"
-        minSdk = 24
+        minSdk = 30
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -37,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx
     implementation libs.androidx.activity.compose
@@ -55,6 +54,8 @@ dependencies {
     debugImplementation libs.androidx.compose.ui.tooling
     debugImplementation libs.androidx.compose.ui.test.manifest
 
-    implementation 'com.github.AmalgamatedCodersInc:IlluminateAI_Android_SDK:2025.09.05'
+    implementation files('../../FindMyShadeSDK/FindMyShadeSDK.aar')
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.preference:preference:1.2.0' // Or a newer version
 
 }

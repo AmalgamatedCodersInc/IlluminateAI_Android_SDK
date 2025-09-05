@@ -15,16 +15,7 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        mavenCentral()
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/AmalgamatedCodersInc/IlluminateAI_Android_SDK")
-            credentials {
-                username = System.getenv("GPR_USER") ?: "" // For local publishing
-                password = System.getenv("GPR_KEY") ?: ""  // For local publishing
-            }
-        }
-
+        mavenCentral() // Add this line
     }
 }
 
